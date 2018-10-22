@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    color:  #626262;
+    font-size: 14px;
+}
+
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.page-nav {
+    margin: 78px 0 102px;
+}
+
+.site-navigation {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+
+.site-navigation li {
+    display: inline-block;
+}
+
+.site-navigation li:not(:last-child) {
+    margin-right: 120px;
+}
+
+.site-navigation a {
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 24px;
+    font-family: "Playfair Display", serif;
+    color:  #626262;
+    font-size: 14px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #03a9f4;
+}
+
+.lifestyle-section {
+    font-size: 0;
+    margin-bottom: 56px;
+}
+
+.lifestyle-section-block {
+    display: inline-block;
+    width: 420px;
+    font-size: 14px;   
+}
+
+.lifestyle-section-block:not(:nth-child(2n)){
+    margin-right: 60px;
+}
+
+.lifestyle-section-block:not(:nth-last-child(-n+2)){
+    margin-bottom: 130px;
+}
+
+
+.lifestyle-section-block h2 {
+    font-family: Ubuntu, light;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #b4ad9e;
+    font-weight: normal;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+.lifestyle-section-block h3 {
+    font-size: 30px;
+    margin-bottom: 36px;
+    font-weight: normal;
+}
+
+.lifestyle-section-block p {
+    line-height: 24px;
+    margin: 0;
+}
+
+.page-footer {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.load-button {
+    margin: 0;
+    padding: 18px 34px;
+    font-family: 'Playfair Display', serif;
+    color:  #626262;
+    font-size: 20px;
+    line-height: 24px;
+    background: none;
+    text-decoration: none;
+    border: 1px solid #626262;
+}
+
+.load-button:hover,
+.load-button:focus {
+    color: #03a9f4;
+    border-color: #03a9f4;
+    cursor: pointer;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); 
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
