@@ -24,8 +24,8 @@ body {
     margin: 0 auto;
 }
 
-.page-nav {
-    margin: 78px 0 102px;
+.page-header {
+    padding: 78px 0 102px;
 }
 
 .site-navigation {
@@ -59,7 +59,6 @@ body {
 
 .lifestyle-section {
     font-size: 0;
-    margin-bottom: 56px;
 }
 
 .lifestyle-section-block {
@@ -100,7 +99,8 @@ body {
 
 .page-footer {
     text-align: center;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
+    padding-top: 56px;
 }
 
 .load-button {
