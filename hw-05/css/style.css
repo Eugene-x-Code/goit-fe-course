@@ -240,6 +240,7 @@ img {
 }
 
 .card {
+    width: 382px;
     transition: opacity 200ms linear, transform 200ms linear;
 }
 
