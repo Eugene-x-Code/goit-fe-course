@@ -171,9 +171,12 @@
     height: 50px;
     border-radius: 4px;
     border: 1px solid #cccccc;
-    outline: none;
     transition: box-shadow 200ms linear;
     flex-direction: column;
+}
+
+.form-req {
+    outline: none;
 }
 
 .form-info::placeholder {
@@ -181,11 +184,11 @@
     text-transform: uppercase;
 }
 
-.form-info:focus:valid {
+.form-req:focus:valid {
     box-shadow: 0 0 0px 2px #00e700;
 }
 
-.form-info:focus:invalid {
+.form-req:focus:invalid {
     box-shadow: 0 0 0px 2px #cc2100;
 }
 
@@ -200,7 +203,7 @@
 
 .form-message {
     padding-top: 18px;
-    height: 208px;
+    height: 210px;
     resize: none;
 }
 
