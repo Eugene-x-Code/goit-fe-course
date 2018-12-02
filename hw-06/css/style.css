@@ -140,17 +140,17 @@
 /* CONTACT SECTION */
 .title-contact {
     color: #ffffff;
-    padding-top: 170px;   
+    padding-top: 140px;   
 }
 .contact-section {
     background-color: #222222;
     background-image: url(../img/map-image.png);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: 100% 100%;
 }
 
 .form-wrapper {
-    padding-bottom: 114px;
+    padding-bottom: 80px;
 }
 
 .contact-form {
