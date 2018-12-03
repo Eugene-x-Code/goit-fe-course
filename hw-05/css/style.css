@@ -9,12 +9,6 @@
     margin: 0 auto;
 }
 
-img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-}
-
 .title {
     position: relative;
     text-align: center;
@@ -240,8 +234,9 @@ img {
 }
 
 .card {
-    width: 382px;
     transition: opacity 200ms linear, transform 200ms linear;
+    display: block;
+    object-fit: cover;
 }
 
 /* CARD MENU */
@@ -261,7 +256,6 @@ img {
 .icon-social:hover,
 .icon-social:focus {
     background-color: #95e1d3;
-    border-right: 1px solid #b9bcb3;
     cursor: pointer;
 }
 
