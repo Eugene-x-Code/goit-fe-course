@@ -46,13 +46,18 @@
             <h2 class="title title-contact">Contact us</h2>
             <p class="subtitle">Proin iaculis purus consequat sem cure.</p>
             <div class="form-wrapper wrapper">
-                <form class="contact-form" id="contact-form" action="#">
-                    <input class="form-info form-req" type="text" name="name" required placeholder="Your name *" id="input_name">
-                    <input class="form-info form-req" type="email" name="email" required placeholder="Your e-mail *" id="input_email">
-                    <input class="form-info" type="text" name="subject" placeholder="Subject" id="input-subject">
-                    <textarea class="form-info form-req form-message" name="message" required placeholder="Your message *" id="input-message" cols="30" rows="10"></textarea>
+                <form action="#">
+                    <div class="contact-form">
+                            <input class="form-info form-req" type="text" name="name" required placeholder="Your name *" id="input_name">
+                            <input class="form-info form-req" type="email" name="email" required placeholder="Your e-mail *" id="input_email">
+                            <input class="form-info" type="text" name="subject" placeholder="Subject" id="input-subject">
+                            <textarea class="form-info form-req form-message" name="message" required placeholder="Your message *" id="input-message" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="contact-button-wrapper">
+                        <input class="contact-button" type="submit" value="Send message">
+                    </div>    
                 </form>
-                <input form="contact-form" class="contact-button" type="submit" value="Send message">
             </div>
         </section>
     </main>
+</body>
