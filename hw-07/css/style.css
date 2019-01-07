@@ -29,7 +29,7 @@ li {
     content: "";
     position: absolute;
     z-index: -1;
-    background-image: url(../img/banner/banner-lg.jpg);
+    background-image: url(../img/banner-lg.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
