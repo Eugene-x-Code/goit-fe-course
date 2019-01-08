@@ -201,7 +201,7 @@ li {
     color: #969696;
 }
 
-.footer-btn {
+.sop-btn {
     display: block;
     font-family: "Montserrat", sans-serif;
     border: 2px solid #ff4e50;
@@ -217,8 +217,8 @@ li {
     transition: background 200ms linear, color 200ms linear;
 }
 
-.footer-btn:hover,
-.footer-btn:focus {
+.sop-btn:hover,
+.sop-btn:focus {
     color: #ffffff;
     background: #ff4e50;
 }
