@@ -144,6 +144,7 @@ li {
 
 .img-wrapper::after {
     content: "";
+    box-sizing: content-box;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
