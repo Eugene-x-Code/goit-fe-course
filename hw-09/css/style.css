@@ -9,6 +9,17 @@
     margin: 0 auto;
 }
 
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    text-decoration: none;
+    display: block;
+}
+
 .title {
     position: relative;
     text-align: center;
@@ -64,41 +75,34 @@
     justify-content: space-between;
 }
 
-.logo {
-    text-decoration: none;
-}
-
-.logo h1 {
+.logo__title {
     font-family: Montserrat, sans-serif;
     font-size: 30px;
     font-weight: 700;
     color: #ffffff;
 }
 
-.navigation {
-    display: flex;
-    list-style: none;
+.nav-list {
     margin-bottom: 108px;
 }
 
-.navigation li:last-child {
+.nav-list__item:last-child {
     margin-right: -30px;
 }
 
-.navigation a {
+.nav-list__link {
     position: relative;
     font-family: Montserrat, sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #ffff;
     text-transform: uppercase;
-    text-decoration: none;
     padding: 0 30px;
     padding-bottom: 16px;
     transition: color 200ms linear;
 }
 
-.navigation a::after {
+.nav-list__link::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -111,18 +115,18 @@
     opacity: 0;
 }
 
-.navigation li:hover a::after,
-.navigation li:focus a::after {
+.nav-list__item:hover .nav-list__link::after,
+.nav-list__item:focus .nav-list__link::after {
     opacity: 1;
     transform: translateX(-50%) translateY(0);
 }
 
-.navigation a:hover,
-.navigation a:focus {
+.nav-list__link:hover,
+.nav-list__link:focus {
     color: #fce38a;
 }
 
-.header-title {
+.header__title {
     color: #ffff;
     text-align: center;
     font-family: Montserrat, sans-serif;
@@ -132,7 +136,7 @@
     margin-bottom: 88px;
 }
 
-.header-subtitle {
+.header__subtitle {
     color: #ffff;
     text-align: center;
     font-family: "Kaushan Script", sans-serif;
@@ -140,7 +144,7 @@
     font-weight: 400;
 }
 
-.header-button {
+.header__button {
     display: block;
     color: #ffff;
     margin: 0 auto;
@@ -155,8 +159,8 @@
     transition: background 200ms linear;
 }
 
-.header-button:hover,
-.header-button:focus {
+.header__button:hover,
+.header__button:focus {
     background: #fce38a;
 
 }
@@ -168,20 +172,17 @@
     margin-bottom: 92px;
 }
 
-.service-list {
-    display: flex;
+.service-section__list {
     flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
 }
 
-.service-list-item {
+.service-card {
     width: 300px;
     position: relative;
     padding-left: 80px;
 }
 
-.service-list-item-title {
+.service-card__title {
     font-family: Montserrat, sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -189,7 +190,7 @@
     text-transform: uppercase;
 }
 
-.service-list-item-desc {
+.service-card__desc {
     font-family: Roboto, sans-serif;
     font-size: 15px;
     font-weight: 400;
@@ -197,7 +198,7 @@
     color: #999999;
 }
 
-.service-list-item::before {
+.service-card::before {
     content: "";
     position: absolute;
     top: 0;
@@ -208,35 +209,35 @@
     transform: translateX(50%);
 }
 
-.icon-alarm::before {
+.service-card--icon-alarm::before {
     background-image: url(../img/icon-services/icon-alarm.png);
 }
 
-.icon-graph::before {
+.service-card--icon-graph::before {
     background-image: url(../img/icon-services/icon-graph.png);
 }
 
-.icon-computer::before {
+.service-card--icon-computer::before {
     background-image: url(../img/icon-services/icon-comp-ok.png);
 }
 
-.icon-book::before {
+.service-card--icon-book::before {
     background-image: url(../img/icon-services/icon-book.png);
 }
 
-.icon-home::before {
+.service-card--icon-home::before {
     background-image: url(../img/icon-services/icon-home.png);
 }
 
-.icon-image::before {
+.service-card--icon-image::before {
     background-image: url(../img/icon-services/icon-image.png);
 }
 
-.service-list-item:not(:nth-child(3n)) {
+.service-card:not(:nth-child(3n)) {
     margin-right: 20px;
 }
 
-.service-list-item:not(:nth-last-child(-n+3)) {
+.service-card:not(:nth-last-child(-n+3)) {
     margin-bottom: 98px;
 }
 
@@ -247,7 +248,7 @@
     margin-bottom: 86px;
 }
 
-.team-desc {
+.team-section__desc {
     width: 960px;
     margin: 0 auto;
     text-align: center;
@@ -259,7 +260,7 @@
     color: #999999;
 }
 
-.item-card-wrapper {
+.team-section__wrapper {
     display: flex;
     justify-content: space-between;
 }
@@ -273,11 +274,11 @@
     margin-right: 32px;
 }
 
-.team-card-hov {
+.team-card__wrapper {
     position: relative;
 }
 
-.team-card-hov::before {
+.team-card__wrapper::before {
     content: "";
     position: absolute;
     top: 0;
@@ -288,7 +289,7 @@
     z-index: -1;
 }
 
-.card {
+.team-card__img {
     transition: opacity 200ms linear, transform 200ms linear;
     display: block;
     object-fit: cover;
@@ -329,7 +330,7 @@
     background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
 }
 
-.icons-wrapper__icon-svg {
+.icon-social__svg {
     display: block;
     width: 50%;
     height: 50%;
@@ -337,18 +338,18 @@
     transition: fill 200ms linear;
 }
 
-.icon-social:hover .icons-wrapper__icon-svg,
-.icon-social:focus .icons-wrapper__icon-svg {
-    fill: #fce38a;
+.icon-social:hover .icon-social__svg,
+.icon-social:focus .icon-social__svg {
+    fill: #ffffff;
 }
 
-.team-card-hov:hover .card,
-.team-card-hov:hover .icon-social-wrapper  {
+.team-card__wrapper:hover .team-card__img,
+.team-card__wrapper:hover .icon-social-wrapper  {
     transform: translateX(-10px) translateY(-10px);
     opacity: 1;
 }
 
-.team-name {
+.team-card__name {
     margin-top: 30px;
     font-size: 14px;
     font-family: Montserrat, sans-serif;
@@ -356,7 +357,7 @@
     text-transform: uppercase;
 }
 
-.team-job {
+.team-card__job {
     margin-top: 10px;
     font-family: Roboto, sans-serif;
     font-weight: 300;
@@ -370,7 +371,7 @@
     border-top: 1px solid #999999;
 }
 
-.footer-wrapper {
+.footer__wrapper {
     padding: 0 10px;
     display: flex;
     justify-content: space-between;
@@ -378,18 +379,18 @@
     height: 64px;
 }
 
-.copyright {
+.footer__copyright {
     font-family: Montserrat, sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #333333;
 }
 
-.copyright span {
+.footer__copyright span {
     color: #f38181;
 }
 
-input[type="email"] { 
+.form__email { 
   height: 38px;
   width: 228px;
   border: 1px solid #d9d9d9;
@@ -400,11 +401,11 @@ input[type="email"] {
   border-right: 0;
 }
 
-input[type="placehoder"] {
+.form__email[type="placehoder"] {
     color: #d9d9d9;
 }
 
-input[type="submit"] {
+.form__submit {
   font-family: Montserrat, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -417,7 +418,7 @@ input[type="submit"] {
   transition: background-color 200ms linear;
 }
 
-input[type="submit"]:hover {
+.form__submit:hover {
   background-color: #f38181;
   cursor: pointer;
 }
