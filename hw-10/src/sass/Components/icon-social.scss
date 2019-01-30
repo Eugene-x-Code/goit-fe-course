@@ -1,0 +1,47 @@
+.icon-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    background-color: $secondary-color;
+    transition: background-color 200ms linear;
+
+    &:not(:last-child) {
+        border-right: 1px solid #f9bd87;
+    }
+    
+    &:hover,
+    &:focus {
+        background-color: $primary-color;
+        cursor: pointer;
+    }
+    
+    &__svg {
+        display: block;
+        width: 50%;
+        height: 50%;
+        fill: $primary-color;
+        transition: fill 200ms linear;
+    }
+    
+    &:hover &__svg,
+    &:focus &__svg {
+        fill: #ffffff;
+    }
+}
+
+.icon-social-wrapper {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 200ms linear, transform 200ms linear;
+    background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+}
+

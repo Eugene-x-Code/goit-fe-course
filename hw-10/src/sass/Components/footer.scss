@@ -1,0 +1,23 @@
+.footer {
+    border-top: 1px solid #999999;
+
+    &__wrapper {
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 64px;
+    }
+    
+    &__copyright {
+        font-family: $main-font-face;
+        font-size: 14px;
+        font-weight: 400;
+        color: #333333;
+    }
+    
+    &__copyright span {
+        color: $primary-color;
+    }
+}
+
